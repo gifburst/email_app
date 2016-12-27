@@ -1,0 +1,91 @@
+#chat {
+  background-color: $Wild-Sand;
+  box-shadow: 0 0 2px $Dove-Gray;
+  margin-left: 10px;
+  width: 160px;
+
+  #chat-top {
+    background-color: $Silver;
+    color: $White;
+    font: $base-font-family;
+    padding: 10px;
+
+    i {
+      float: right;
+      margin-left: 10px;
+    }
+
+    h4 {
+      margin: 0;
+      display: inline;
+      font-weight: $base-font-weight;
+    }
+  }
+
+  #chat-id {
+    color: $Alto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 5px;
+    background-color: $White;
+    border-bottom: 3px solid $Web-Orange;
+
+    h3 {
+      font-size: $base-font-size-big;
+      color: $Dove-Gray;
+      font-weight: $base-font-weight;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      }
+    }
+
+  }
+
+  #chat-contacts {
+    font: $base-font-family;
+    font-size: $base-font-size-big;
+    font-weight: $bold;
+    background-color: $Wild-Sand;
+    border-bottom: 1px solid $Dove-Gray;
+    height: 100%;
+
+    p {
+      margin-left: 15px;
+      color: $Tundora;
+    }
+
+    ul {
+      height: 60%;
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        width: 10px;
+        }
+
+      &::-webkit-scrollbar-track {
+        background-color: $Wild-Sand;
+        border-radius: 10px;
+        }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: $Mercury;
+        }
+
+      &::-webkit-scrollbar-thumb:window-inactive {
+        background-color: $Mercury;
+        }
+
+
+      li {
+        margin-top: 10px;
+        font-size: $base-font-size;
+        color: $Gray;
+        }
+      }
+    }

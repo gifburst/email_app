@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" type="text/css" href="dist/styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- fontovi -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800" rel="stylesheet">
+
+  <!-- scripts -->
+  <script src="dist/scripts/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <title>e-mail app</title>
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <div id="sidebar">
+
+        <div id="clock">
+          <ul>
+            <li id="hours"></li>
+            <li id="point">:</li>
+            <li id="min"></li>
+          </ul>
+        </div>
+
+        <button id="write-btn">Write</button>
+
+        <div class="menu">
+          <a href="#">Inbox <span>(4)</span></a>
+          <a href="#">Starred</a>
+          <a href="#">Important</a>
+          <a href="#">Sent</a>
+          <a href="#">Drafts</a>
+          <a href="#">Trash</a>
+        </div>
+
+        <div class="plus"><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></div>
+
+        <div class="menu">
+          <a href="#">Tag <i id="tag" class="fa fa-square" aria-hidden="true"></i></a>
+          <a href="#">Clients <i id="clients" class="fa fa-square" aria-hidden="true"></i></a>
+          <a href="#">Opportunities <i id="opportunities" class="fa fa-square" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="plus"><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></div>
+
+        <div id="btn-group">
+          <button class="square-btn"><i class="fa fa-cog" aria-hidden="true"></i></button>
+          <button class="square-btn"><i class="fa fa-power-off" aria-hidden="true"></i></button>
+        </div>
+
+    </div>
+
+    <div id="inbox">
+
+        <div id="first-line">
+
+          <h1>Inbox</h1>
+
+          <i id="caret" class="fa fa-chevron-down dropdwn-btn" aria-hidden="true">
+            <div class="dropdown-content">
+              <a href="#">link 1</a>
+              <a href="#">link 2</a>
+              <a href="#">link 3</a>
+              <a href="#">link 4</a>
+            </div>
+          </i>
+
+          <input type="text" placeholder="&#xF002;  Search..."></input>
+          <img src="dist/images/userimage.png">
+          <h4>User Useric</h4>
+
+          <i id="caret-circ" class="fa fa-chevron-circle-down dropdwn-btn" aria-hidden="true">
+            <div class="dropdown-content">
+              <a href="#">link 1</a>
+              <a href="#">link 2</a>
+              <a href="#">link 3</a>
+            </div>
+          </i>
+
+        </div>
+
+        <div id="controls">
+          <div id="left">
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            <i class="fa fa-refresh" aria-hidden="true"></i>
+            <i class="fa fa-reply icon-rotate-180" aria-hidden="true"></i>
+            <i class="fa fa-times" aria-hidden="true"></i>
+            <i class="fa fa-exclamation" aria-hidden="true"></i>
+          </div>
+          <div id="right">
+            <p>1-100 of 637</p>
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div id="inbox-list">
+          <table cellspacing="0" cellpadding="5">
+            <tbody>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="star"><i class="fa fa-star" aria-hidden="true"></i></td>
+                <td class="sender">Sender</td>
+                <td class="subject">subject...</td>
+                <td class="date">date</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="dots"
+          <i class="fa fa-circle" aria-hidden="true"></i>
+          <i id="mid-dot" class="fa fa-circle" aria-hidden="true"></i>
+          <i class="fa fa-circle" aria-hidden="true"></i>
+        </div>
+
+    </div>
+
+    <div id="email-view">
+
+        <header>
+          <p>Design is a Funny Word</p>
+          <div id="head-ctrl">
+            <i class="fa fa-times close-btn" aria-hidden="true"></i>
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </div>
+        </header>
+
+        <div id="sender-details">
+
+          <img src="dist/images/userimage.png">
+          <h4>Steve Jobs /</h4>
+          <p id="email-from">stevejobs@apple.com <em>to</em> me</p>
+
+          <i id="caret-circ" class="fa fa-chevron-circle-down dropdwn-btn" aria-hidden="true">
+            <div class="dropdown-content">
+              <a href="#">link 1</a>
+              <a href="#">link 2</a>
+              <a href="#">link 3</a>
+            </div>
+          </i>
+
+          <p>NOV 14 <em>(9 days ago)</em>
+
+        </div>
+
+        <div id="email-body">
+
+          <p>Mr. User Useric,</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+          <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+          <p>Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper,
+            it’s really how it works. The design of the Mac wasn’t what it looked like, although that was part of it.
+            Primarily, it was how it worked. To design something really well, you have to get it.
+            You have to really grok what it’s all about. It takes a passionate commitment to really thoroughly
+            understand something, chew it up, not just quickly swallow it. Most people don’t take the time to do that.
+          </p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          </p>
+          <p>Best regards,<br> Steve Jobs</p>
+
+        </div>
+
+        <div id="email-attachment">
+          <hr>
+          <div>
+          <p id="exte1">HTML</p> <p class="file-name">index.html <span>(5.3 KB)</span></p><p class="svd"><span>Share</span><span>View</span><span>Download</span></p>
+          </div>
+          <div>
+          <p id="exte2">CSS</p> <p class="file-name">index.html <span>(54.3 KB)</span></p><p class="svd"><span>Share</span><span>View</span><span>Download</span></p>
+          </div>
+          <hr>
+        </div>
+
+        <div id="textarea" contenteditable>
+          <p>Click here to <a href="#">Reply</a> or to <a href="#">Forvard</a></p>
+        </div>
+
+    </div>
+
+    <div id="chat">
+
+        <div id="chat-top">
+          <h4>Chat</h4>
+          <i class="fa fa-power-off" aria-hidden="true"></i>
+          <i class="fa fa-cog" aria-hidden="true"></i>
+        </div>
+
+        <div id="chat-id">
+          <img src="dist/images/userimage.png">
+          <h3>User Useric</h3>
+          <i class="fa fa-chevron-circle-down dropdwn-btn" aria-hidden="true">
+            <div class="dropdown-content">
+              <a href="#">link 1</a>
+              <a href="#">link 2</a>
+              <a href="#">link 3</a>
+            </div>
+          </i>
+        </div>
+
+        <div id="chat-contacts">
+          <p>Contacts (8)</p>
+
+          <ul>
+            <li>Alex Penny</li>
+            <li>Allan Grinshtein</li>
+            <li>Ana-Gabriela Stroe</li>
+            <li>Brian Benitez</li>
+            <li>Bruno Martinez</li>
+            <li>Cris Labno</li>
+            <li>Dalton Hurd</li>
+            <li>Daniel Sandvik</li>
+            <li>Daniela Alves</li>
+            <li>Helder Olivera</li>
+            <li>Ilja Miskov</li>
+            <li>Jeff Broderick</li>
+            <li>Jonathan Moriera</li>
+            <li>Jose Alves De Silva</li>
+            <li>Liam McKay</li>
+            <li>Linda Ellasen</li>
+            <li>Martin Oberhauser</li>
+            <li>Mason Yarnell</li>
+            <li>Mike McAlister</li>
+            <li>Ole Kristian</li>
+            <li>Ryan Ford</li>
+            <li>Scoot Hills</li>
+            <li>Tim Silva</li>
+          </ul>
+
+          <div class="plus"><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></div>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

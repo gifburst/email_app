@@ -1,0 +1,214 @@
+#inbox {
+  position: relative;
+  margin-right: 5px;
+  background-color: $White;
+  box-shadow: 0 0 2px $Dove-Gray;
+  flex: 2.5;
+
+  #first-line {
+        max-width: 90%;
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $Alto;
+
+        h1, h4 {
+          font-family: $base-font-family;
+          display: inline;
+        }
+
+        h1 {
+          letter-spacing: -2px;
+          font-weight: $light;
+          font-size: $header-font-size;
+        }
+
+        h4 {
+          font-weight: $base-font-weight;
+          color: $Dove-Gray;
+          position: relative;
+          left: 5px;
+        }
+
+        input[type] {
+          font-family: "FontAwesome", "Open sans";
+          font-style: italic;
+          border: 1px solid $Alto;
+          border-radius: 3px;
+          padding: 7px;
+          }
+
+        #caret {
+          font-size: 10px;
+          position: relative;
+          top: 3px;
+          right: 6px;
+          }
+
+        #caret-circ {
+          font-size: 20px;
+        }
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          position: relative;
+          left: 10px;
+        }
+      }
+
+  #controls {
+    width: 90%;
+    margin: 0 auto;
+    color: $Alto;
+
+    i {
+      transition: 0.4s ease-in-out;
+
+      &:hover {
+        transform: scale(1.3);
+        color: $Black;
+      }
+    }
+
+    #left {
+      display: inline-block;
+
+      i {
+        margin-right: 10px;
+
+        &:nth-child(n+3) {
+          color: $Tia-Maria;
+        }
+      }
+    }
+
+    #right {
+      display: inline;
+      float: right;
+
+      i {
+        margin-left: 10px;
+      }
+
+      p {
+        display: inline;
+        font-size: $base-font-size-big;
+        font-style: italic;
+      }
+    }
+  }
+
+  #inbox-list {
+    width: 90%;
+    height: 65%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto 40px auto;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      }
+
+    &::-webkit-scrollbar-track {
+      background-color: $Wild-Sand;
+      border-radius: 10px;
+      }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: $Mercury;
+      }
+
+    &::-webkit-scrollbar-thumb:window-inactive {
+      background-color: $Mercury;
+      }
+
+    table {
+      display: block;
+      width: 100%;
+      font-family: $base-font-family;
+      font-size: $base-font-size-big;
+      color: $Dove-Gray;
+
+      .check {
+        width: 5%;
+        text-align: center;
+        }
+
+      .star {
+        width: 5%;
+        text-align: center;
+        color: $Silver;
+
+        .clicked {
+          color: $Web-Orange;
+          }
+        }
+
+      .sender {
+        width: 23%;
+        text-align: left;
+        font-weight: $bold;
+      }
+
+      .subject {
+        width: 52%;
+        text-align: left;
+      }
+
+      .date {
+        width: 15%;
+        text-align: right;
+      }
+
+      tbody {
+        display: table;
+        width: 98%;
+        height: 65%;
+
+        tr {
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        tr:nth-child(even) {
+          background-color: $Wild-Sand;
+          border-left-style: solid;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+
+          td:first-child {
+            border-radius: 4px 0 0 4px;
+            }
+
+          td:last-child {
+            border-radius: 0 4px 4px 0;
+            }
+          }
+        }
+
+      }
+    }
+
+  #dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 6px;
+    color: $Alto;
+
+    #mid-dot {
+      margin: 4px;
+    }
+  }
+}

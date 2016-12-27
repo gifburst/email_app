@@ -1,0 +1,118 @@
+#sidebar {
+  width: 150px;
+  margin-right: 10px;
+  overflow: hidden;
+  background-color: $Cod-Gray;
+
+  #write-btn {
+    background-color: $Tia-Maria;
+    border: none;
+    border-radius: 2px;
+    color: $White;
+    font-family: $base-font-family;
+    text-transform: uppercase;
+    font-size: $base-font-size-big;
+    font-weight: $bold;
+    padding: 10px 35px;
+    margin: 0 17px;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 3px $Dove-Gray;
+      }
+    }
+
+  .menu {
+      border-bottom: 0.5px solid $Dove-Gray;
+      margin-top: 20px;
+
+      a {
+        font-family: $base-font-family;
+        font-size: $base-font-size;
+        font-weight: $bold;
+        color: $Dove-Gray;
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        transition: 0.4s ease-in-out;
+        padding: 8px 0 8px 20px;
+
+        i {
+          float: right;
+          padding-right: 35px;
+        }
+
+        #tag {
+          color: $Atlantis;
+        }
+
+        #clients {
+          color: $Robin-Egg-Blue;
+        }
+
+        #opportunities {
+          color: $Burning-Orange;
+        }
+
+        &:hover {
+          background-color: $Mine-Shaft;
+          color: $White;
+        }
+
+        &:active {
+          background-color: $Mine-Shaft;
+          color: $White;
+        }
+      }
+    }
+
+  #clock {
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 30px 0;
+        text-align: center;
+
+        li {
+          display: inline;
+          font-family: $base-font-family;
+          font-weight: $light;
+          font-size: $header-font-size;
+          text-align: center;
+          letter-spacing: -2px;
+          color: $Dove-Gray;
+        }
+      }
+
+      #point {
+        animation: sec 1s ease infinite;
+      }
+
+      @keyframes sec {
+        0% {opacity: 1}
+        50% {opacity: 0}
+        100% {opacity: 1}
+      }
+    }
+
+  #btn-group {
+      position: fixed;
+      bottom: 15px;
+      margin-left: 17px;
+
+      .square-btn {
+        background-color: $Mine-Shaft;
+        color: $Dove-Gray;
+        border: none;
+        border-radius: 2px;
+        padding: 15px 20px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+
+        &:hover {
+          background-color: $White;
+        }
+      }
+    }
+  }
